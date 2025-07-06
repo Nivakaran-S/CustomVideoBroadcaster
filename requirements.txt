@@ -1,0 +1,8 @@
+uvicorn
+fastapi
+pyvirtualcam
+opencv-python
+ultralytics
+torch 
+torchvision
+
