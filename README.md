@@ -62,13 +62,14 @@ pip install -r requirements.txt
 - Blurs or replaces non-human regions
 
 ## 📁 Project Structure
-```
-app/
-├── main.py            
-├── video_utils.py     
+```    
 static/
 ├── index.html         
 requirements.txt
+main.py
+utils.py
+stream_utils.py
+engine.py
 README.md
 ```
 
