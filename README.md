@@ -65,12 +65,12 @@ pip install -r requirements.txt
 ```    
 static/
 ├── index.html         
-requirements.txt
-main.py
-utils.py
-stream_utils.py
-engine.py
-README.md
+-requirements.txt
+-main.py
+-utils.py
+-stream_utils.py
+-engine.py
+-README.md
 ```
 
 ## ❗ Limitations
