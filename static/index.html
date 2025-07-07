@@ -77,11 +77,21 @@
                 background: #e9ecef;
                 border-radius: 5px;
             }
+
+            .logo {
+                position: absolute;
+                top: 10px;
+                right: 10px;
+                width: 100px;
+                height: 100px;
+                object-fit: contain;
+                border-radius: 10px;
+            }
         </style>
     </head>
     
     <body>
-        <img src="./static/nivakaranLogo.jpg">
+        <img class="logo" alt="logo" src="./static/nivakaranLogo.jpg">
 
         <div class="container">
             <h1>Virtual Camera Controller</h1>
@@ -128,6 +138,27 @@
                     });
                 });
             }
+
+            function startStream() {
+                const source = document.getElementById('camera').value;
+                const fps = document.getElementById('fps').value;
+                const blur = document.getElementById('blur').value;
+                const background = document.getElementById('background').value;
+
+
+                fetch(`/start?source=${source}&fps=${fps}&blur=${blur}&background=${background}`)
+
+            }
+
+            function stopStream() {
+                fetch('/stop')
+                .then(response = response.json())
+                .then(data => {
+                    document.getElementById('status').innerHTML = data.message;
+                })
+            }
+
+
         </script>
 
     </body>
