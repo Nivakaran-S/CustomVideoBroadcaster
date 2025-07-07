@@ -1,9 +1,9 @@
 # End-to-End Custom Video Broadcaster with Background Replacement for Google Meet
 
-Transform your video call experience by customizing your video feed with blurred or virtual backgrounds — directly in Google Meet or Zoom. This project bridges the gap between frame-based video processing and real-time video streaming, using OpenCV, YOLOv8, FastAPI, and OBS virtual camera.
+Transform your video call experience by customizing your video feed with blurred or virtual backgrounds, directly in Google Meet or Zoom. This project bridges the gap between frame-based video processing and real-time video streaming, using OpenCV, YOLOv8, FastAPI, and OBS virtual camera.
 
 ## 🚀 Project Overview
-Google Meet and Zoom expect a continuous video stream from your camera, but computer vision libraries like OpenCV only provide individual frames. This creates a challenge when applying real-time computer vision processing — such as background blurring or replacement.
+Google Meet and Zoom expect a continuous video stream from your camera, but computer vision libraries like OpenCV only provide individual frames. This creates a challenge when applying real-time computer vision processing, such as background blurring or replacement.
 
 This project solves that by:
 - Mimicking a physical webcam using a virtual one.
@@ -11,7 +11,7 @@ This project solves that by:
 - Allowing you to use the modified video stream in Google Meet, Zoom, or any other video conferencing software.
 
 ## 🧠 Problem Statement
-🧩 The Issue: When you apply image processing using OpenCV, you get individual frames — not a video stream. But platforms like Google Meet require a continuous stream (like from a physical webcam).
+🧩 The Issue: When you apply image processing using OpenCV, you get individual frames, not a video stream. But platforms like Google Meet require a continuous stream (like from a physical webcam).
 
 ## 💡 Solution
 ✅ The Fix: We create a virtual webcam using OBS (Open Broadcaster Software) and pyvirtualcam, allowing us to send processed video frames as a continuous stream.
@@ -52,7 +52,7 @@ pip install -r requirements.txt
 1. Start OBS Virtual Camera
 2. Run the FastAPI backend: uvicorn app.main:app --reload
 3. Open: http://127.0.0.1:8000
-4. Choose mode: Background Blur / Add Custom Background
+4. Choose mode: Background Blur / Add Background
 5. Select "OBS Virtual Camera" in Google Meet or Zoom
 
 
@@ -92,4 +92,4 @@ static/
 - https://fastapi.tiangolo.com/
 
 ## 🏁 Final Words
-This project demonstrates how you can bridge the gap between computer vision and real-time applications, creatively mimicking hardware functionality through software. It's a practical, real-world application of machine learning, video streaming, and system-level programming — ideal for live video enhancements, privacy, and personalization.
+This project demonstrates how you can bridge the gap between computer vision and real-time applications, creatively mimicking hardware functionality through software. It's a practical, real-world application of machine learning, video streaming, and system-level programming, ideal for live video enhancements, privacy, and personalization.
